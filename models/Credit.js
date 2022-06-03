@@ -1,8 +1,19 @@
 const mongoose = require("mongoose");
-
 const creditSchema = new mongoose.Schema({
-    credit:{
+    amount:{
         type: String,
+        required: true 
+    },
+    profiletype:{
+        type: String,
+        required: true 
+    },
+    customerId:{
+        type: String,
+        required: true 
+    },
+    date:{ 
+        type : String,
         required: true 
     }
 })
